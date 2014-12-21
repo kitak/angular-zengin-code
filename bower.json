@@ -1,0 +1,30 @@
+{
+  "name": "angular-zengin-code",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kitak/angular-zengin-code",
+  "authors": [
+    "Keisuke KITA <kei.kita2501@gmail.com>"
+  ],
+  "description": "Angular directives for zengin_code",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "angular",
+    "directive",
+    "form",
+    "bank codes",
+    "branch codes"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "zengin-code": "~0.0.3-p20141218"
+  }
+}

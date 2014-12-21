@@ -1,0 +1,46 @@
+{
+  "name": "angular-zengin-code",
+  "version": "0.0.0",
+  "description": "Angular directives for zengin_code",
+  "main": "./src",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify src/index.js > dist/angular-zengin-code.js",
+    "minify": "uglifyjs dist/angular-zengin-code.js -cm -o dist/angular-zengin-code.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/kitak/angular-zengin-code.git"
+  },
+  "keywords": [
+    "angular",
+    "bank code",
+    "branch code",
+    "directive",
+    "form"
+  ],
+  "author": "Keisuke KITA <kei.kita2501@gmail.com> (http://kitakee.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kitak/angular-zengin-code/issues"
+  },
+  "homepage": "https://github.com/kitak/angular-zengin-code",
+  "dependencies": {
+    "zengin-code": "0.0.3-p20141218"
+  },
+  "devDependencies": {
+    "angular": "^1.3.8",
+    "angular-mocks": "^1.3.8",
+    "browserify": "^7.0.3",
+    "browserify-shim": "^3.8.1",
+    "karma": "^0.12.28"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "angular": "global:angular"
+  }
+}
