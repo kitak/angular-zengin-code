@@ -15,14 +15,14 @@ module.exports = function () {
           return ngModelController.$modelValue;
         }, function () {
           if (!!zenginCode[ngModelController.$modelValue]) {
-            ngModelController.$bankName = zenginCode[ngModelController.$modelValue].name;
+            ngModelController.$bankName = zenginCode[''+ngModelController.$modelValue].name;
           } else {
             ngModelController.$bankName = '';
           }
         });
 
         ngModelController.$validators.zcBankCode = function (code) {
-          return !!zenginCode[code];
+          return !!zenginCode[''+code];
         };
       };
     }
