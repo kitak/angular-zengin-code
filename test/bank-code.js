@@ -16,6 +16,10 @@ describe('bank-code', function () {
     controller = element.controller('ngModel');
   }));
 
+  it('adds a numeric pattern', function () {
+    expect(element.attr('pattern')).toEqual('[0-9]*');
+  });
+
   it('accepts a valid cord', function () {
     controller.$setViewValue('0001');
     expect(controller.$valid).toBe(true);
