@@ -2,7 +2,7 @@
 
 var angular = require('angular');
 
-describe('bank-code', function () {
+describe('branch-code', function () {
 
   beforeEach(angular.mock.module(require('../')));
 
@@ -10,8 +10,9 @@ describe('bank-code', function () {
 
   beforeEach(angular.mock.inject(function ($injector) {
     var $compile = $injector.get('$compile');
-    element = angular.element('<input ng-model="bankCode" zc-bank-code>');
+    element = angular.element('<input ng-model="branchCode" zc-branch-code bank-code="bankCode">');
     scope = $injector.get('$rootScope').$new();
+    scope.bankCode = '0001';
     $compile(element)(scope);
     controller = element.controller('ngModel');
   }));
@@ -21,18 +22,18 @@ describe('bank-code', function () {
   });
 
   it('adds maxlength attribute', function () {
-    expect(element.attr('maxlength')).toEqual('4');
+    expect(element.attr('maxlength')).toEqual('3');
   });
 
   it('accepts a valid code', function () {
-    controller.$setViewValue('0001');
+    controller.$setViewValue('001');
     expect(controller.$valid).toBe(true);
-    expect(scope.bankCode).toEqual('0001');
+    expect(scope.branchCode).toEqual('001');
   });
 
   it('rejects an invalid code', function () {
-    controller.$setViewValue('0002');
+    controller.$setViewValue('999');
     expect(controller.$valid).toBe(false);
-    expect(scope.bankCode).toBeUndefined();
+    expect(scope.branchCode).toBeUndefined();
   });
 });
