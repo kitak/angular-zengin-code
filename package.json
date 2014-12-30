@@ -1,6 +1,6 @@
 {
   "name": "angular-zengin-code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Angular directives for zengin_code",
   "main": "./dist/angular-zengin-code.js",
   "scripts": {
