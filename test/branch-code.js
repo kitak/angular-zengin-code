@@ -36,4 +36,23 @@ describe('branch-code', function () {
     expect(controller.$valid).toBe(false);
     expect(scope.branchCode).toBeUndefined();
   });
+
+  describe('when bankCode is invalid', function () {
+    beforeEach(function () {
+      scope.bankCode = '0002';
+      scope.$apply();
+    });
+
+    it('rejects a valid code', function () {
+      controller.$setViewValue('001');
+      expect(controller.$valid).toBe(false);
+      expect(scope.branchCode).toBeUndefined();
+    });
+
+    it('rejects an invalid code', function () {
+      controller.$setViewValue('999');
+      expect(controller.$valid).toBe(false);
+      expect(scope.branchCode).toBeUndefined();
+    });
+  });
 });
