@@ -20,7 +20,7 @@ angular.module('myApp', [
 ## API
 angular-zengin-code モジュールの提供するディレクティブは ngModel に依存しています。
 
-全てのディクレティブで、`pattern="[0-9]*"`のバリデーションルールを設定しています。
+全てのディクレティブで、[BETTER NUMERICAL INPUTS FOR MOBILE FORMS](http://bradfrost.com/blog/mobile/better-numerical-inputs-for-mobile-forms/) を参考に`pattern="[0-9]*"`を設定しています。
 
 ### Bank Code (`zc-bank-code`)
 
