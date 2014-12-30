@@ -20,9 +20,15 @@ describe('bank-code', function () {
     expect(element.attr('pattern')).toEqual('[0-9]*');
   });
 
-  it('accepts a valid cord', function () {
+  it('accepts a valid code', function () {
     controller.$setViewValue('0001');
     expect(controller.$valid).toBe(true);
     expect(scope.bankCode).toEqual('0001');
+  });
+
+  it('rejects an invalid code', function () {
+    controller.$setViewValue('0002');
+    expect(controller.$valid).toBe(false);
+    expect(scope.bankCode).toBeUndefined();
   });
 });
