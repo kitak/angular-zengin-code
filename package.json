@@ -1,8 +1,8 @@
 {
   "name": "angular-zengin-code",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Angular directives for zengin_code",
-  "main": "./src",
+  "main": "./dist/angular-zengin-code.js",
   "scripts": {
     "test": "echo $PATH; karma start --single-run",
     "build": "browserify src/index.js > dist/angular-zengin-code.js",
