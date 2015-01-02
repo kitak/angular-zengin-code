@@ -1,6 +1,6 @@
 angular-zengin-code
 ========================
-[![Bower version](https://badge.fury.io/bo/zengin-code.svg)](http://badge.fury.io/bo/zengin-code)
+[![Bower version](https://badge.fury.io/bo/angular-zengin-code.svg)](http://badge.fury.io/bo/angular-zengin-code)
 
 口座情報を入力するフォームを構築するためのAngularJSのディレクティブを提供するライブラリです。  
 [zengin_code](https://github.com/rosylilly/zengin_code/)をバリデーションに利用しています。
