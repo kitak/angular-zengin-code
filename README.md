@@ -63,4 +63,4 @@ angular-zengin-code モジュールの提供するディレクティブは ngMod
 
 ## Licence
 
-[MIT](LICENCE)
+[MIT](http://kitak.mit-license.org/)

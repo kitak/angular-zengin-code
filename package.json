@@ -20,7 +20,7 @@
     "form"
   ],
   "author": "Keisuke KITA <kei.kita2501@gmail.com> (http://kitakee.net)",
-  "license": "MIT",
+  "license": "http://kitak.mit-license.org/",
   "bugs": {
     "url": "https://github.com/kitak/angular-zengin-code/issues"
   },

@@ -17,7 +17,7 @@
     "bank codes",
     "branch codes"
   ],
-  "license": "MIT",
+  "license": "http://kitak.mit-license.org/",
   "ignore": [
     "**/.*",
     "node_modules",
